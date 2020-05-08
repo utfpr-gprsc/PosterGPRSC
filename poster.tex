@@ -1,0 +1,72 @@
+\documentclass{gprscposter}
+
+\usepackage{lipsum}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{subfig} 
+\usepackage{amsmath} 
+\usepackage{textcomp} 
+\usepackage{url}  
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{scalefnt}
+%\usepackage[portuguese]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Configs               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setsectioncolor{matblue} 
+
+% Inform the paths to the logo files or leave empty one or both parameters. 
+% There are three options [ T | M | B ] to positioning them.
+\setlogos[M]{images/GPRSC_Logo}{images/UTFPR_Logo}
+
+% Choose one of the background options {1 | 2 | 3}. 
+% Actually, one can select any graphic file in backgrounds directory. 
+%\setbackground{1}
+
+% Resize the title to keep it in two lines // {font size}{line height}
+\settitlesize{64pt}{68pt}
+
+% Resize the font of the content. Default {32pt}{38pt} // {font size}{line height}
+\setcontentfontesize{42pt}{48pt}
+
+% Resize the font of the emails. Default {26pt}{32pt} // {font size}{line height}
+\setemailfontesize{42pt}{40pt}
+
+% General info
+\title{Title} 
+
+\author{Newton C. Will} 
+
+\department{Federal University of Technology - Paraná}
+
+\email{will@utfpr.edu.br}
+
+\posteryear{\the\year}
+
+\copyrightholder{\href{https://coens.dv.utfpr.edu.br/gprsc/}{Computer Networks and Security Research Group - GPRSC}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%           End configs               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{poster}
+
+\section{\uppercase{Introduction}}
+
+\section{\uppercase{Conclusion}}
+
+\renewcommand\refname{\uppercase{References}}
+\scalefont{0.55}
+\bibliographystyle{abbrv}
+\bibliography{reference}
+
+\end{poster}
+
+\end{document}
